@@ -1,4 +1,5 @@
 import pygame, time, map
+from pygame.locals import *
 pygame.init()
 
 SCREEN_HEIGHT = 400
@@ -19,3 +20,7 @@ testmap = map.Map(SCREEN_WIDTH/TILE_SIZE,SCREEN_HEIGHT/TILE_SIZE,TILE_SIZE)
 while 1:
 	render_map(testmap)
 	pygame.display.flip()
+	
+	for event in pygame.event.get(KEYDOWN):
+		if event.type == KEYDOWN:
+			quit()

@@ -13,7 +13,10 @@ Current goals:
 	Build Goals:
 +find a library to work in
 +get a window open with a graphic
--build the basic idea of map/tile architecture
+-build something that can render a map
+-get some kind of viewport funcitonality
+	-be able to pan the viewport
+	-be able to zoom out/in
 ?how should we handle terrain architecturally
 
 
