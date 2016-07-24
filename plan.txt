@@ -1,0 +1,12 @@
+End goal: make a 4X like C2C but with more unified design, and fuller execution of the idea
+What this means:
+-support for multiple maps (interplanetary stuff)
+-maybe chaning scope/resolution to match progress
+-good scifi and implimentation of scifi
+-i think this game needs more civics you feel me?
+-local and national "cultural identities" as a replacement for C2C cultures and developing leader traits respectively
+
+A few more bitesize things to do since this is big:
+-be able to generate a small map
+-get something running that can handle one city and its growth and production
+-get some idea of how research should work, web/tree/linear?
