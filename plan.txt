@@ -11,8 +11,8 @@ Current goals:
 -get some idea of how research should work, web/tree/linear?
 -
 	Build Goals:
--find a library to work in
--get a window open with a graphic
++find a library to work in
++get a window open with a graphic
 -build the basic idea of map/tile architecture
 -build a basic update loop and impliment some interactivity with the map (mouseover tooltip i suppose?)
 --At this point we can start branching out.
