@@ -6,7 +6,13 @@ What this means:
 -i think this game needs more civics you feel me?
 -local and national "cultural identities" as a replacement for C2C cultures and developing leader traits respectively
 
-A few more bitesize things to do since this is big:
--be able to generate a small map
--get something running that can handle one city and its growth and production
+Current goals:
+	Design Goals:
 -get some idea of how research should work, web/tree/linear?
+-
+	Build Goals:
+-find a library to work in
+-get a window open with a graphic
+-build the basic idea of map/tile architecture
+-build a basic update loop and impliment some interactivity with the map (mouseover tooltip i suppose?)
+--At this point we can start branching out.
