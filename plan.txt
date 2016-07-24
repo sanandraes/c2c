@@ -14,5 +14,8 @@ Current goals:
 +find a library to work in
 +get a window open with a graphic
 -build the basic idea of map/tile architecture
+?how should we handle terrain architecturally
+
+
 -build a basic update loop and impliment some interactivity with the map (mouseover tooltip i suppose?)
 --At this point we can start branching out.
