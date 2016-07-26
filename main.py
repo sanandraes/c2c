@@ -1,26 +1,30 @@
-import pygame, time, map
-from pygame.locals import *
+import pygame, settings, time, map
+from pygame.locals import * #to make namespace calls not suck
 pygame.init()
 
-SCREEN_HEIGHT = 400
-SCREEN_WIDTH = 600
-TILE_SIZE = 10
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-image = pygame.image.load("image.bmp")
-image_rect = image.get_rect()
+screen = pygame.display.set_mode((settings.SCREEN_WIDTH, settings.SCREEN_HEIGHT))
 
-def render_map(activemap):
-	for x in range(activemap.width):
-		for y in range(activemap.height):
-			pygame.draw.rect(screen, activemap.maparray[x][y].terrain.color, (x*activemap.side_length, y*activemap.side_length, activemap.side_length, activemap.side_length))
+testmap = map.Map(100, 100, settings.TILE_SIZE)
+testmap.ready_surface()
 
-testmap = map.Map(SCREEN_WIDTH/TILE_SIZE,SCREEN_HEIGHT/TILE_SIZE,TILE_SIZE)
-
+def handle_input():
+	for event in pygame.event.get():
+		if event.type == KEYDOWN:
+			if event.key == K_DOWN:
+				testmap.move_camera(0,settings.TILE_SIZE)
+			elif event.key == K_UP:
+				testmap.move_camera(0,-settings.TILE_SIZE)
+			elif event.key == K_LEFT:
+				testmap.move_camera(-settings.TILE_SIZE,0)
+			elif event.key == K_RIGHT:
+				testmap.move_camera(settings.TILE_SIZE,0)
+		elif event.type == QUIT:
+			quit()
+			
 while 1:
-	render_map(testmap)
+	
+	handle_input()
+	testmap.render(screen)
 	pygame.display.flip()
 	
-	for event in pygame.event.get(KEYDOWN):
-		if event.type == KEYDOWN:
-			quit()

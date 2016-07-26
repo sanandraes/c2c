@@ -13,9 +13,12 @@ Current goals:
 	Build Goals:
 +find a library to work in
 +get a window open with a graphic
--build something that can render a map
--get some kind of viewport funcitonality
-	-be able to pan the viewport
++build something that can render a map
+-get viewport working
+	-be able to pan the viewport and have more map than screen
+		!you can leave the universe, it gets weird
+		!holding the buttons down doesn't work
+		
 	-be able to zoom out/in
 ?how should we handle terrain architecturally
 
