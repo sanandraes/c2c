@@ -10,17 +10,20 @@ testmap.ready_surface()
 
 def handle_input():
 	for event in pygame.event.get():
-		if event.type == KEYDOWN:
-			if event.key == K_DOWN:
-				testmap.move_camera(0,settings.TILE_SIZE)
-			elif event.key == K_UP:
-				testmap.move_camera(0,-settings.TILE_SIZE)
-			elif event.key == K_LEFT:
-				testmap.move_camera(-settings.TILE_SIZE,0)
-			elif event.key == K_RIGHT:
-				testmap.move_camera(settings.TILE_SIZE,0)
-		elif event.type == QUIT:
+		if event.type == QUIT:
 			quit()
+	
+	keyspressed = pygame.key.get_pressed()
+	
+	if keyspressed[K_DOWN]:
+		testmap.move_camera(0,1)
+	elif keyspressed[K_UP]:
+		testmap.move_camera(0,-1)
+	if keyspressed[K_LEFT]:
+		testmap.move_camera(-1,0)
+	elif keyspressed[K_RIGHT]:
+		testmap.move_camera(1,0)
+	
 			
 while 1:
 	
