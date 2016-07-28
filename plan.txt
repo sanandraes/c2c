@@ -15,12 +15,10 @@ Current goals:
 +get a window open with a graphic
 +build something that can render a map
 -get viewport working
-	-be able to pan the viewport and have more map than screen
-		!holding the buttons down doesn't work
-		
+	+be able to pan the viewport and have more map than screen
+	+edge pan
+	-middle mouse pan
 	-be able to zoom out/in
-?how should we handle terrain architecturally
-
 
 -build a basic update loop and impliment some interactivity with the map (mouseover tooltip i suppose?)
 --At this point we can start branching out.
