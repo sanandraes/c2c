@@ -10,15 +10,24 @@ Current goals:
 	Design Goals:
 -get some idea of how research should work, web/tree/linear?
 -
+
+
 	Build Goals:
 +find a library to work in
 +get a window open with a graphic
 +build something that can render a map
--get viewport working
+~get viewport working
 	+be able to pan the viewport and have more map than screen
 	+edge pan
 	-middle mouse pan
 	-be able to zoom out/in
++make camera its own class
 
+~basic map generation (cellular)
+	+get cellular automata seeded
+	+evolve generations
+	~decide on specifics for algo
+	!algo is not general over map sizes
+
+	
 -build a basic update loop and impliment some interactivity with the map (mouseover tooltip i suppose?)
---At this point we can start branching out.
